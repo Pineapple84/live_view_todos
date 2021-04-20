@@ -7,6 +7,10 @@ defmodule LiveViewTodosWeb.TodoLive do
     {:ok, fetch(socket)}
   end
 
+  def handle_info({Todos, [:todo | _], _}, socket) do
+    {:noreply, fetch(socket)}
+  end
+
   def handle_event("add", %{"todo" => todo}, socket) do
     Todos.create_todo(todo)
 

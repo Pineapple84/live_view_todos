@@ -15,4 +15,5 @@ defmodule LiveViewTodos.Todos.Todo do
     |> cast(attrs, [:title, :done])
     |> validate_required([:title, :done])
   end
+
 end
