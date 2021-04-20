@@ -1,0 +1,20 @@
+<DOCTYPE! html>
+<head>
+</head>
+<center>
+    <h1><span style="color:yellow;">Check</span><span>Dis</span></h1>
+    <p style="color:lightgrey;font-weight:bold"><i>A simple todo list application designed for productive use.</i></p>
+</center>
+</html>
+
+<form action="#" phx-submit="add">
+  <%= text_input :todo, :title, placeholder: "Plan a next step for your task." %>
+  <%= submit "Add", phx_disable_with: "Adding..." %>
+</form>
+
+<%= for todo <- @todos do %>
+<div>
+    <%= checkbox(:todo, :done, phx_click: "toggle_done", phx_value_id: todo.id, value: todo.done) %>
+    <%= todo.title %>
+</div>
+<% end %>
