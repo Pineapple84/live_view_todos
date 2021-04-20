@@ -16,7 +16,7 @@ config :live_view_todos, LiveViewTodosWeb.Endpoint,
   secret_key_base: "pEbmEg4ZqFrN4evpx/7IPg70E8fGpjq5KSqI7whpo9ieo7Q1Gyx6agRNJ5cODRpu",
   render_errors: [view: LiveViewTodosWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: LiveViewTodos.PubSub,
-  live_view: [signing_salt: "wR1RCQVy"]
+  live_view: [signing_salt: "xmRhDVyeqkvA1zO85JeCoeWBXjH"]
 
 # Configures Elixir's Logger
 config :logger, :console,

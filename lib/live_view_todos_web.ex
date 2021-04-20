@@ -24,6 +24,8 @@ defmodule LiveViewTodosWeb do
       import Plug.Conn
       import LiveViewTodosWeb.Gettext
       alias LiveViewTodosWeb.Router.Helpers, as: Routes
+
+      import Phoenix.LiveView.Controller
     end
   end
 
