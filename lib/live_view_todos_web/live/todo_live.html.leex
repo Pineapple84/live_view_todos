@@ -2,14 +2,23 @@
 <head>
   <center>
     <h1><span style="color:yellow;">Check</span><span style="color:lightgrey;">Dis</span></h1>
-    <p><i>A simple todo list application designed for productive use.</i></p>
+    <p><i>A todo list application designed for simple use.</i></p>
+
+    <style>
+      h1 {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 45px;
+      }
+    </style>
   </center>
 </head>
 <body>
   <center>
   <form action="#" phx-submit="add">
-  <%= text_input :todo, :title, placeholder: "Plan a next step for your task" %>
-  <%= submit "Add", phx_disable_with: "Adding..." %>
+  <div class="addTask">
+    <%= text_input :todo, :title, placeholder: "Plan a next step for your task" %>
+    <%= submit "Add", phx_disable_with: "Adding..." %>
+  </div>
   </center>
 
   <style>
@@ -19,6 +28,10 @@
     form {
       border: 2px solid #EAF8BF;
       background-color: #EAF8BF;
+      border-radius: 20px;
+    }
+    .addTask {
+      padding: 15px;
     }
   </style>
   </form>
