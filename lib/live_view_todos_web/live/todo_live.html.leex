@@ -1,16 +1,29 @@
 <DOCTYPE! html>
 <head>
+  <center>
+    <h1><span style="color:yellow;">Check</span><span style="color:lightgrey;">Dis</span></h1>
+    <p><i>A simple todo list application designed for productive use.</i></p>
+  </center>
 </head>
-<center>
-    <h1><span style="color:yellow;">Check</span><span>Dis</span></h1>
-    <p style="color:lightgrey;font-weight:bold"><i>A simple todo list application designed for productive use.</i></p>
-</center>
-</html>
-
-<form action="#" phx-submit="add">
-  <%= text_input :todo, :title, placeholder: "Plan a next step for your task." %>
+<body>
+  <center>
+  <form action="#" phx-submit="add">
+  <%= text_input :todo, :title, placeholder: "Plan a next step for your task" %>
   <%= submit "Add", phx_disable_with: "Adding..." %>
-</form>
+  </center>
+
+  <style>
+    body {
+      background-color: #006992;
+    }
+    form {
+      border: 2px solid #EAF8BF;
+      background-color: #EAF8BF;
+    }
+  </style>
+  </form>
+</body>
+</html>
 
 <%= for todo <- @todos do %>
 <div>
