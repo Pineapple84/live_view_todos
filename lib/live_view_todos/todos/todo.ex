@@ -3,7 +3,11 @@ defmodule LiveViewTodos.Todos.Todo do
   import Ecto.Changeset
 
   schema "todos" do
+
+    @type checkbox :: boolean
     field :done, :boolean, default: false
+
+    @type title :: string
     field :title, :string
 
     timestamps()
