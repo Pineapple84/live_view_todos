@@ -1,4 +1,5 @@
 defmodule LiveViewTodos.Todos.Todo do
+
   use Ecto.Schema
   import Ecto.Changeset
 

@@ -1,4 +1,5 @@
 defmodule LiveViewTodos.MixProject do
+
   use Mix.Project
 
   def project do
@@ -64,4 +65,5 @@ defmodule LiveViewTodos.MixProject do
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"]
     ]
   end
+
 end

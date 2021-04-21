@@ -1,4 +1,5 @@
 defmodule LiveViewTodosWeb.Router do
+
   use LiveViewTodosWeb, :router
 
   pipeline :browser do
@@ -40,4 +41,5 @@ defmodule LiveViewTodosWeb.Router do
       live_dashboard "/dashboard", metrics: LiveViewTodosWeb.Telemetry
     end
   end
+
 end

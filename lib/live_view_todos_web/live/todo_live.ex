@@ -5,6 +5,8 @@ defmodule LiveViewTodosWeb.TodoLive do
   alias LiveViewTodos.Todos
 
   def mount(_params, _session, socket) do
+    Todos.subscribe()
+
     {:ok, fetch(socket)}
   end
 
