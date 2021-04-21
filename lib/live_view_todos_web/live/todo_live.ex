@@ -12,12 +12,14 @@ defmodule LiveViewTodosWeb.TodoLive do
     {:noreply, fetch(socket)}
   end
 
+  @type word() :: struct()
   def handle_event("add", %{"todo" => todo}, socket) do
     Todos.create_todo(todo)
 
     {:noreply, fetch(socket)}
   end
 
+  @type name() :: struct()
   def handle_event("toggle_done", %{"id" => id}, socket) do
     todo = Todos.get_todo!(id)
     Todos.update_todo(todo, %{done: !todo.done})

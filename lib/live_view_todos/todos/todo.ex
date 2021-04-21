@@ -4,10 +4,10 @@ defmodule LiveViewTodos.Todos.Todo do
 
   schema "todos" do
 
-    @type checkbox :: boolean
+    @type checkbox() :: boolean()
     field :done, :boolean, default: false
 
-
+    @type word() :: String.t()
     field :title, :string
 
     timestamps()
