@@ -2,7 +2,7 @@
 <head>
   <center>
     <h1><span style="color:yellow;">Check</span><span style="color:lightgrey;">Dis</span></h1>
-    <p><i>A todo list application designed for simple use.</i></p>
+    <p style="color:white;"><i>A todo list application designed for simple use.</i></p>
 
     <style>
       h1 {
@@ -15,10 +15,17 @@
 <body>
   <center>
   <form action="#" phx-submit="add">
-  <div class="addTask">
-    <%= text_input :todo, :title, placeholder: "Plan a next step for your task" %>
-    <%= submit "Add", phx_disable_with: "Adding..." %>
-  </div>
+    <div class="addTask">
+      <%= text_input :todo, :title, placeholder: "Plan a next step for your task" %>
+      <%= submit "Add", phx_disable_with: "Adding..." %>
+    </div>
+
+    <%= for todo <- @todos do %>
+    <div class="checkbox">
+      <%= checkbox(:todo, :done, phx_click: "toggle_done", phx_value_id: todo.id, value: todo.done) %>
+      <%= todo.title %>
+    </div>
+    <% end %>
   </center>
 
   <style>
@@ -33,15 +40,11 @@
     .addTask {
       padding: 15px;
     }
+    .checkbox {
+      text-align: left;
+      padding-left: 15px;
+    }
   </style>
   </form>
 </body>
 </html>
-
-<%= for todo <- @todos do %>
-
-<div>
-    <%= checkbox(:todo, :done, phx_click: "toggle_done", phx_value_id: todo.id, value: todo.done) %>
-    <%= todo.title %>
-</div>
-<% end %>
