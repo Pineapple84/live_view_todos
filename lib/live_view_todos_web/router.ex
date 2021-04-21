@@ -8,6 +8,7 @@ defmodule LiveViewTodosWeb.Router do
     plug :put_root_layout, {LiveViewTodosWeb.LayoutView, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug :put_layout, {LiveViewTodosWeb.LayoutView, :app}
   end
 
   pipeline :api do

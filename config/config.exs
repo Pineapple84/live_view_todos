@@ -18,6 +18,9 @@ config :live_view_todos, LiveViewTodosWeb.Endpoint,
   pubsub_server: LiveViewTodos.PubSub,
   live_view: [signing_salt: "xmRhDVyeqkvA1zO85JeCoeWBXjH"]
 
+  config :phoenix,
+  template_engines: [leex: Phoenix.LiveView.Engine]
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
