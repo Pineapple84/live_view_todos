@@ -1,18 +1,10 @@
-# LiveViewTodos
+# LiveView Todos
 
-To start your Phoenix server:
+This project is called todo list web application. It is called 'CheckDis'. I played with the word 'Checklist' as I am thinking about something like checkbox. The application used Phoenix framework, LiveView, Elixir, HTML, and CSS. The app function is easy. You type your task you want to accomplish, and when you finish, you check it off the checkbox. It comes with LiveView so you can see it real-time when you open two tabs at once.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `npm install` inside the `assets` directory
-  * Start Phoenix endpoint with `mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+I adapted the project from this link https://dennisbeatty.com/how-to-create-a-todo-list-with-phoenix-liveview.html. But I added the style further by using HTML and CSS. I am a total beginner in Phoenix framework so I complemented it with my basic existing skills in HTML and CSS.
 
 ## Learn more
-
   * Official website: https://www.phoenixframework.org/
   * Guides: https://hexdocs.pm/phoenix/overview.html
   * Docs: https://hexdocs.pm/phoenix
