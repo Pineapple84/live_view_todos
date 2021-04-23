@@ -1,5 +1,5 @@
 
-# LiveView Todos
+# Simple LiveView Todos Application
 
 This project is a todo list web application. It is called 'CheckDis'. I played with the word 'Checklist' as I am thinking about something like checkbox. The application used Phoenix framework, LiveView, Elixir, HTML, and CSS. 
 
