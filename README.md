@@ -1,3 +1,4 @@
+
 # LiveView Todos
 
 This project is a todo list web application. It is called 'CheckDis'. I played with the word 'Checklist' as I am thinking about something like checkbox. The application used Phoenix framework, LiveView, Elixir, HTML, and CSS. 
@@ -7,7 +8,7 @@ The app function is easy. You type your task you want to accomplish, and when yo
 
 I adapted the project from this link https://dennisbeatty.com/how-to-create-a-todo-list-with-phoenix-liveview.html. But I added the style further by using HTML and CSS. I am a total beginner in Phoenix framework so I complemented it with my basic existing skills in HTML and CSS.
 
-![Todo List Application](C:\Users\aethayameesawat\Desktop\CheckDis.png "Todo List Appplication")
+![CheckDis todo list application](https://user-images.githubusercontent.com/60586178/115808055-16ec4a80-a42d-11eb-8e40-49bd03fbf1c3.png)
 
 
 ## Learn more
